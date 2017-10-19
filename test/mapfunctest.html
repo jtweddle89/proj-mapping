@@ -1,0 +1,163 @@
+<!DOCTYPE html >
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>htsgsgfrsgfsd</title>
+    <style>
+/* Always set the map height explicitly to define the size of the div element that contains the map. */
+      #map {
+          height: 100%;
+      }
+      html, body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+      }
+      .controls {
+          background-color: #fff;
+          border-radius: 2px;
+          border: 1px solid transparent;
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+          box-sizing: border-box;
+          font-family: Roboto;
+          font-size: 15px;
+          font-weight: 300;
+          height: 29px;
+          margin-left: 17px;
+          margin-top: 10px;
+          outline: none;
+          padding: 0 11px 0 13px;
+          text-overflow: ellipsis;
+          width: 400px;
+      }
+      .controls:focus {
+          border-color: #4d90fe;
+      }
+      .title {
+          font-weight: bold;
+      }
+      #addressinfowindow-content {
+          display: none;
+      }
+      #map #addressinfowindow-content {
+          display: inline;
+      }
+
+      #floating-panel {
+          position: absolute;
+          top: 10px;
+          left: 25%;
+          z-index: 5;
+          background-color: #fff;
+          padding: 5px;
+          border: 1px solid #999;
+          text-align: center;
+          font-family: 'Roboto', 'sans-serif';
+          line-height: 30px;
+          padding-left: 10px;
+      }
+      #place-id-input {
+          width: 250px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+<input id="pac-input" class="controls" type="text" placeholder="Enter a location">
+<!--------- GEOCODER CODE --------->
+<div id="floating-panel">
+    <!-- Supply a default place ID for a place in Brooklyn, New York. -->
+    <input id="place-id-input" type="text" value="ChIJd8BlQ2BZwokRAFUEcm_qrcA">
+    <input id="submit" type="button" value="Get Address for Place ID">
+</div>
+    <div id="map"></div>
+    <div id="addressinfowindow-content">
+        <span id="place-name" class="title"></span>
+        <br> Place ID: <span id="place-id-output"></span>
+        <br>
+        <span id="place-address"></span>
+    </div>
+    <script>
+      function initMap() {
+          var map = new google.maps.Map(document.getElementById('map'), {
+              center: {
+                  lat: 33.8688,
+                  lng: 140.2195
+              },
+              zoom: 13
+          });
+          var input = document.getElementById('pac-input');
+          var autocomplete = new google.maps.places.Autocomplete(input);
+          autocomplete.bindTo('bounds', map);
+          map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+          var addressinfowindow = new google.maps.InfoWindow();
+          var addressinfowindowContent = document.getElementById('addressinfowindow-content');
+          addressinfowindow.setContent(addressinfowindowContent);
+          var addressmarker = new google.maps.Marker({
+              map: map
+          });
+          addressmarker.addListener('click', function() {
+              addressinfowindow.open(map, addressmarker);
+          });
+          autocomplete.addListener('place_changed', function() {
+              addressinfowindow.close();
+              var place = autocomplete.getPlace();
+              if (!place.geometry) {
+                  return;
+              }
+              if (place.geometry.viewport) {
+                  map.fitBounds(place.geometry.viewport);
+              } else {
+                  map.setCenter(place.geometry.location);
+                  map.setZoom(17);
+              }
+
+              // Set the position of the addressmarker using the place ID and location.
+              addressmarker.setPlace({
+                  placeId: place.place_id,
+                  location: place.geometry.location
+              });
+              addressmarker.setVisible(true);
+              addressinfowindowContent.children['place-name'].textContent = place.name;
+              addressinfowindowContent.children['place-id-output'].textContent = place.place_id;
+              addressinfowindowContent.children['place-address'].textContent = place.formatted_address;
+              addressinfowindow.open(map, addressmarker);
+          });
+
+          var geocoder = new google.maps.Geocoder;
+          var geocodeinfowindow = new google.maps.InfoWindow;
+          document.getElementById('submit').addEventListener('click', function() {
+              geocodePlaceId(geocoder, map, geocodeinfowindow);
+          });
+    // This function is called when the user clicks the UI button requesting
+    // a geocode of a place ID.
+          function geocodePlaceId(geocoder, map, geocodeinfowindow) {
+              var placeIdInput = document.getElementById('place-id-input').value;
+              geocoder.geocode({
+                  'placeId': placeIdInput
+              }, function(results, status) {
+                  if (status === 'OK') {
+                      if (results[0]) {
+                          map.setZoom(11);
+                          map.setCenter(results[0].geometry.location);
+                          var geocodemarker = new google.maps.Marker({
+                              map: map,
+                              position: results[0].geometry.location
+                          });
+                          geocodeinfowindow.setContent(results[0].formatted_address);
+                          geocodeinfowindow.open(map, geocodemarker);
+                      } else {
+                          window.alert('No results found');
+                      }
+                  } else {
+                      window.alert('Geocoder failed due to: ' + status);
+                  }
+              });
+          }
+    
+      }
+    </script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYFhS5iX-f61jji_uGdiSIN-EvgsTvfMc&libraries=places&callback=initMap"></script>
+  </body>
+</html>
