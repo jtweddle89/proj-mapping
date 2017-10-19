@@ -1,0 +1,5 @@
+marker-color,marker-size,marker-symbol,prop1,prop2,prop3,lon,lat
+#ff0000,medium,lighthouse,val1,val2,val3,-80.760498046875,43.67581809328341
+#eaff00,medium,circle-stroked,val1,,,-80.4638671875,43.79885402720353
+#7ef56c,medium,monument,val1,,,-81.30432128906249,42.98053954751642
+#a659a7,medium,cross,val1,,,-80.540771484375,43.75522505306928
