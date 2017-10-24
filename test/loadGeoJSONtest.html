@@ -1,0 +1,169 @@
+<!DOCTYPE html >
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    <title>Loading GeoJSON Test</title>
+    <style>
+/* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+#map {
+  height: 100%;
+}
+/* Optional: Makes the sample page fill the window. */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.controls {
+  background-color: #fff;
+  border-radius: 2px;
+  border: 1px solid transparent;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  box-sizing: border-box;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  height: 29px;
+  margin-left: 17px;
+  margin-top: 10px;
+  outline: none;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 400px;
+}
+
+.controls:focus {
+  border-color: #4d90fe;
+}
+.title {
+  font-weight: bold;
+}
+#infowindow-content {
+  display: none;
+}
+#map #infowindow-content {
+  display: inline;
+}
+    </style>
+  </head>
+
+  <body>
+<input id="pac-input" class="controls" type="text"
+    placeholder="Enter a location">
+<div id="map"></div>
+<div id="infowindow-content">
+  <span id="place-name"  class="title"></span><br>
+  <!-- Place ID <span id="place-id"></span><br> -->
+  <span id="place-address"></span>
+</div>
+    <script>
+var map;
+
+function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 15,
+        center: {
+            lat: 43.476,
+            lng: -80.53
+        }
+    });
+var input = document.getElementById('pac-input');
+
+  var autocomplete = new google.maps.places.Autocomplete(
+      input, {placeIdOnly: true});
+  autocomplete.bindTo('bounds', map);
+
+  map.controls[google.maps.ControlPosition.TOP_LEFT].push(input);
+
+    var geojson = 'https://raw.githubusercontent.com/jtweddle89/proj-mapping/master/test/map.geojson'
+        // Load GeoJSON.
+    map.data.loadGeoJson(geojson);
+
+    // Set the style settings for each polygon based on their properties
+    map.data.setStyle(function(feature) {
+        return ({
+            fillColor: feature.getProperty('fill'),
+            strokeWeight: feature.getProperty('stroke-width'),
+            strokeColor: feature.getProperty('stroke'),
+            strokeOpacity: feature.getProperty('stroke-opacity'),
+            fillOpacity: feature.getProperty('fill-opacity')
+        });
+    });
+
+    var infowindow = new google.maps.InfoWindow({
+        maxWidth: 200
+    });
+    map.data.addListener('click', function(event) {
+	resinfowindow.close();
+        var iwName = event.feature.getProperty('Name');
+        var iwGeometry = event.feature.getGeometry().getType();
+        var iwImage = 'http://iprojects1.ibigroup.com/31207/Project%20Images/Rain%20Storm%20June%201%202012/King%20Street%20St.%20Jacobs%20002.jpg';
+        var iwLink = 'http://iprojects1.ibigroup.com/31207';
+        var contentString = '<div id="content">' +
+            '<div id="siteNotice">' +
+            '</div>' +
+            '<img src="' + iwImage +
+            '" alt="Test pic" style="width:100%;height:100%;">' +
+            '<h3 id="firstHeading" class="firstHeading">' + iwName + '</h3>' +
+            '<div id="bodyContent">' +
+            '<p>' + iwGeometry + '</p>' + '<br>' +
+            '<a href="' + iwLink + '" target="_blank">Sharepoint Site</a>' +
+            '</div></div>';
+        infowindow.setContent(contentString);
+        infowindow.setPosition(event.latLng);
+        infowindow.open(map, this);
+
+    });
+    var resinfowindow = new google.maps.InfoWindow({
+        maxWidth: 200
+    });
+
+  var infowindowContent = document.getElementById('infowindow-content');
+  resinfowindow.setContent(infowindowContent);
+  var geocoder = new google.maps.Geocoder;
+  var marker = new google.maps.Marker({
+    map: map
+  });
+  marker.addListener('click', function() {
+    resinfowindow.open(map, marker);
+  });
+
+  autocomplete.addListener('place_changed', function() {
+    infowindow.close();
+    resinfowindow.close();
+    
+    var place = autocomplete.getPlace();
+
+    if (!place.place_id) {
+      return;
+    }
+    geocoder.geocode({'placeId': place.place_id}, function(results, status) {
+
+      if (status !== 'OK') {
+        window.alert('Geocoder failed due to: ' + status);
+        return;
+      }
+      //map.setZoom(11);
+      map.setCenter(results[0].geometry.location);
+      // Set the position of the marker using the place ID and location.
+      marker.setPlace({
+        placeId: place.place_id,
+        location: results[0].geometry.location
+      });
+      marker.setVisible(false);
+      infowindowContent.children['place-name'].textContent = place.name;
+      //infowindowContent.children['place-id'].textContent = place.place_id;
+      infowindowContent.children['place-address'].textContent =
+          results[0].formatted_address;
+      resinfowindow.open(map, marker);
+    });
+  });
+
+}
+
+    </script>
+      <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYFhS5iX-f61jji_uGdiSIN-EvgsTvfMc&libraries=places&callback=initMap">
+</script>
+  </body>
+</html>
