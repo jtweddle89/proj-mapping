@@ -56,8 +56,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 64",
-        "Street": "Phillip St"
+        "Street": "Phillip St",
+        "name": "Drawing 64"
       }
     },
     {
@@ -95,8 +95,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 63",
-        "Street": "Seagram Dr"
+        "Street": "Seagram Dr",
+        "name": "Drawing 63"
       }
     },
     {
@@ -134,8 +134,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 62",
-        "Street": "Albert St"
+        "Street": "Albert St",
+        "name": "Drawing 62"
       }
     },
     {
@@ -173,8 +173,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 61",
-        "Street": "Albert St"
+        "Street": "Albert St",
+        "name": "Drawing 61"
       }
     },
     {
@@ -216,8 +216,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 60",
-        "Street": "Albert St"
+        "Street": "Albert St",
+        "name": "Drawing 60"
       }
     },
     {
@@ -259,10 +259,10 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 59",
         "marker-symbol": "",
         "marker-size": "",
-        "Street": "Albert St"
+        "Street": "Albert St",
+        "name": "Drawing 59"
       }
     },
     {
@@ -299,9 +299,9 @@
         "stroke-width": 2,
         "stroke-opacity": 1,
         "fill-opacity": 0.5,
-        "Name": "Drawing 58",
         "fill": "#000000",
-        "Street": "Albert St"
+        "Street": "Albert St",
+        "name": "Drawing 58"
       }
     },
     {
@@ -339,9 +339,9 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 57",
         "marker-color": "#000000",
-        "Street": "Albert St"
+        "Street": "Albert St",
+        "name": "Drawing 57"
       }
     },
     {
@@ -390,10 +390,10 @@
         "stroke-width": 2,
         "stroke-opacity": 1,
         "fill": "#555555",
-        "Name": "Drawing 56",
         "marker-symbol": "",
         "fill-opacity": 0.3,
-        "Street": "Albert St"
+        "Street": "Albert St",
+        "name": "Drawing 56"
       }
     },
     {
@@ -431,8 +431,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 55",
-        "Street": "Albert St"
+        "Street": "Albert St",
+        "name": "Drawing 55"
       }
     },
     {
@@ -469,9 +469,9 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 54",
         "Street": "Cardill Cr",
-        "stroke": "#060606"
+        "stroke": "#060606",
+        "name": "Drawing 54"
       }
     },
     {
@@ -508,9 +508,9 @@
         "stroke-width": 2,
         "stroke-opacity": 1,
         "fill": "#ff0000",
-        "Name": "Drawing 53",
-        "fill-opacity": "",
-        "Street": "Cardill Cr"
+        "fill-opacity": 0.7,
+        "Street": "Cardill Cr",
+        "name": "Drawing 53"
       }
     },
     {
@@ -600,8 +600,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 52",
-        "Street": "Cardill Cr"
+        "Street": "Cardill Cr",
+        "name": "Drawing 52"
       }
     },
     {
@@ -639,9 +639,9 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 51",
         "marker-symbol": "",
-        "Street": "Cardill Cr"
+        "Street": "Cardill Cr",
+        "name": "Drawing 51"
       }
     },
     {
@@ -679,9 +679,9 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 50",
         "marker-color": "#000000",
-        "Street": "Regina St N"
+        "Street": "Regina St N",
+        "name": "Drawing 50"
       }
     },
     {
@@ -719,9 +719,9 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 49",
         "marker-symbol": "",
-        "Street": "Regina St N"
+        "Street": "Regina St N",
+        "name": "Drawing 49"
       }
     },
     {
@@ -759,9 +759,9 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 48",
         "marker-symbol": "",
-        "Street": "Regina St N"
+        "Street": "Regina St N",
+        "name": "Drawing 48"
       }
     },
     {
@@ -803,8 +803,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 47",
-        "Street": "Regina St N"
+        "Street": "Regina St N",
+        "name": "Drawing 47"
       }
     },
     {
@@ -842,8 +842,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 46",
-        "Street": "King St N"
+        "Street": "King St N",
+        "name": "Drawing 46"
       }
     },
     {
@@ -881,8 +881,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 45",
-        "Street": "King St N"
+        "Street": "King St N",
+        "name": "Drawing 45"
       }
     },
     {
@@ -924,9 +924,9 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 44",
         "marker-color": "#000000",
-        "Street": "King St N"
+        "Street": "King St N",
+        "name": "Drawing 44"
       }
     },
     {
@@ -964,8 +964,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 43",
-        "Street": "King St N"
+        "Street": "King St N",
+        "name": "Drawing 43"
       }
     },
     {
@@ -1015,8 +1015,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 42",
-        "Street": "James St"
+        "Street": "James St",
+        "name": "Drawing 42"
       }
     },
     {
@@ -1058,8 +1058,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 41",
-        "Street": "Ezra Ave"
+        "Street": "Ezra Ave",
+        "name": "Drawing 41"
       }
     },
     {
@@ -1101,8 +1101,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 40",
-        "Street": "Elgin St"
+        "Street": "Elgin St",
+        "name": "Drawing 40"
       }
     },
     {
@@ -1156,8 +1156,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 39",
-        "Street": "University Ave W"
+        "Street": "University Ave W",
+        "name": "Drawing 39"
       }
     },
     {
@@ -1199,8 +1199,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 38",
-        "Street": "University Ave W"
+        "Street": "University Ave W",
+        "name": "Drawing 38"
       }
     },
     {
@@ -1246,8 +1246,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 37",
-        "Street": "University Ave E"
+        "Street": "University Ave E",
+        "name": "Drawing 37"
       }
     },
     {
@@ -1285,8 +1285,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 36",
-        "Street": "Hemlock St"
+        "Street": "Hemlock St",
+        "name": "Drawing 36"
       }
     },
     {
@@ -1324,8 +1324,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 35",
-        "Street": "Hemlock St"
+        "Street": "Hemlock St",
+        "name": "Drawing 35"
       }
     },
     {
@@ -1379,8 +1379,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 34",
-        "Street": "Larch St"
+        "Street": "Larch St",
+        "name": "Drawing 34"
       }
     },
     {
@@ -1418,8 +1418,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 33",
-        "Street": "Hickory St W"
+        "Street": "Hickory St W",
+        "name": "Drawing 33"
       }
     },
     {
@@ -1457,8 +1457,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 32",
-        "Street": "Spruce St"
+        "Street": "Spruce St",
+        "name": "Drawing 32"
       }
     },
     {
@@ -1496,8 +1496,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 31",
-        "Street": "Spruce St"
+        "Street": "Spruce St",
+        "name": "Drawing 31"
       }
     },
     {
@@ -1535,8 +1535,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 30",
-        "Street": "Spruce St"
+        "Street": "Spruce St",
+        "name": "Drawing 30"
       }
     },
     {
@@ -1574,8 +1574,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 29",
-        "Street": "Spruce St"
+        "Street": "Spruce St",
+        "name": "Drawing 29"
       }
     },
     {
@@ -1621,8 +1621,8 @@
         "stroke-opacity": 1,
         "fill": "#fe320e",
         "fill-opacity": 0.5,
-        "Name": "Drawing 28",
-        "Street": "Spruce St"
+        "Street": "Spruce St",
+        "name": "Drawing 28"
       }
     },
     {
@@ -1660,8 +1660,8 @@
         "stroke-opacity": 1,
         "fill": "#ff0000",
         "fill-opacity": 0.5,
-        "Name": "Drawing 27",
-        "Street": "Columbia St W"
+        "Street": "Columbia St W",
+        "name": "Drawing 27"
       }
     },
     {
@@ -1703,8 +1703,8 @@
         "stroke-opacity": 1,
         "fill": "#ff0000",
         "fill-opacity": 0.5,
-        "Name": "Drawing 26",
-        "Street": "Columbia St W"
+        "Street": "Columbia St W",
+        "name": "Drawing 26"
       }
     },
     {
@@ -1742,8 +1742,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.4,
-        "Name": "Drawing 25",
-        "Street": "Columbia St W"
+        "Street": "Columbia St W",
+        "name": "Drawing 25"
       }
     },
     {
@@ -1780,9 +1780,9 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 24",
         "Street": "Columbia St W",
-        "stroke": "#000000"
+        "stroke": "#000000",
+        "name": "Drawing 24"
       }
     },
     {
@@ -1820,8 +1820,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 23",
-        "Street": "Columbia St W"
+        "Street": "Columbia St W",
+        "name": "Drawing 23"
       }
     },
     {
@@ -1863,8 +1863,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 22",
-        "Street": "Columbia St W"
+        "Street": "Columbia St W",
+        "name": "Drawing 22"
       }
     },
     {
@@ -1902,8 +1902,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 21",
-        "Street": "Marshall St"
+        "Street": "Marshall St",
+        "name": "Drawing 21"
       }
     },
     {
@@ -1941,8 +1941,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 20",
-        "Street": "Marshall St"
+        "Street": "Marshall St",
+        "name": "Drawing 20"
       }
     },
     {
@@ -1980,8 +1980,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 19",
-        "Street": "Marshall St"
+        "Street": "Marshall St",
+        "name": "Drawing 19"
       }
     },
     {
@@ -2039,8 +2039,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 18",
-        "Street": "Sunview St"
+        "Street": "Sunview St",
+        "name": "Drawing 18"
       }
     },
     {
@@ -2078,8 +2078,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 15",
-        "Street": "Lester St"
+        "Street": "Lester St",
+        "name": "Drawing 15"
       }
     },
     {
@@ -2117,8 +2117,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 14",
-        "Street": "Lester St"
+        "Street": "Lester St",
+        "name": "Drawing 14"
       }
     },
     {
@@ -2156,8 +2156,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 13",
-        "Street": "Lester St"
+        "Street": "Lester St",
+        "name": "Drawing 13"
       }
     },
     {
@@ -2195,8 +2195,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 12",
-        "Street": "Lester St"
+        "Street": "Lester St",
+        "name": "Drawing 12"
       }
     },
     {
@@ -2234,8 +2234,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 11",
-        "Street": "Lester St"
+        "Street": "Lester St",
+        "name": "Drawing 11"
       }
     },
     {
@@ -2281,8 +2281,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 10",
-        "Street": "Lester St"
+        "Street": "Lester St",
+        "name": "Drawing 10"
       }
     },
     {
@@ -2328,8 +2328,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 9",
-        "Street": "Lester St"
+        "Street": "Lester St",
+        "name": "Drawing 9"
       }
     },
     {
@@ -2375,8 +2375,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 8",
-        "Street": "Lester St"
+        "Street": "Lester St",
+        "name": "Drawing 8"
       }
     },
     {
@@ -2414,8 +2414,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 7",
-        "Street": "Lester St"
+        "Street": "Lester St",
+        "name": "Drawing 7"
       }
     },
     {
@@ -2453,8 +2453,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 6",
-        "Street": "Lester St"
+        "Street": "Lester St",
+        "name": "Drawing 6"
       }
     },
     {
@@ -2492,8 +2492,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 5",
-        "Street": "Lester St"
+        "Street": "Lester St",
+        "name": "Drawing 5"
       }
     },
     {
@@ -2531,8 +2531,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 4",
-        "Street": "Lester St"
+        "Street": "Lester St",
+        "name": "Drawing 4"
       }
     },
     {
@@ -2574,8 +2574,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 3",
-        "Street": "Lester St"
+        "Street": "Lester St",
+        "name": "Drawing 3"
       }
     },
     {
@@ -2613,8 +2613,8 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 2",
-        "Street": "Lester St"
+        "Street": "Lester St",
+        "name": "Drawing 2"
       }
     },
     {
@@ -2652,20 +2652,20 @@
         "stroke-opacity": 1,
         "fill": "#555555",
         "fill-opacity": 0.5,
-        "Name": "Drawing 1",
-        "Street": "Lester St"
+        "Street": "Lester St",
+        "name": "Drawing 1"
       }
     },
     {
       "type": "Feature",
       "properties": {
         "stroke": "#07e3fc",
-        "stroke-width": 10,
+        "stroke-width": 1,
         "stroke-opacity": 1,
         "fill": "#80ffff",
         "fill-opacity": 0.5,
-        "Name": "Spruce St. Reconstruction",
-        "Street": "Spruce St, Hickory St."
+        "Street": "Spruce St, Hickory St.",
+        "name": "Spruce St. Reconstruction"
       },
       "geometry": {
         "type": "Polygon",
@@ -2721,8 +2721,9 @@
         "marker-symbol": "circle",
         "marker-color": "#00ff00",
         "marker-size": "medium",
-        "Name": "IBI Waterloo",
-        "Street": "Albert St."
+        "Street": "Albert St.",
+        "name": "IBI Waterloo",
+        "stroke-width": ""
       },
       "geometry": {
         "type": "Point",
