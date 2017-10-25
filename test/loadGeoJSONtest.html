@@ -96,7 +96,7 @@ var input = document.getElementById('pac-input');
     });
     map.data.addListener('click', function(event) {
 	resinfowindow.close();
-        var iwName = event.feature.getProperty('Name');
+        var iwName = event.feature.getProperty('name');
         var iwGeometry = event.feature.getGeometry().getType();
         var iwImage = 'http://iprojects1.ibigroup.com/31207/Project%20Images/Rain%20Storm%20June%201%202012/King%20Street%20St.%20Jacobs%20002.jpg';
         var iwLink = 'http://iprojects1.ibigroup.com/31207';
