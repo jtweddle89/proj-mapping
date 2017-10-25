@@ -7,9 +7,16 @@ mydata = r.json()
 print(mydata.keys())
 
 
-##gtlist = []
-
-for i in mydata['features'][0]:
-        print(i,mydata['features'][0][i])
-        print('-----------------------------------------------------------------------------')
-    
+#print out keys and values of every item in every properties dictionary, skipping items that have value of ""
+ix = len(mydata['features']) - 1
+for i in mydata['features']:
+#        print (mydata['features'][ix]['properties'])
+        for (k,v) in mydata['features'][ix]['properties'].items():
+                if len(k)>=11:
+                        tabs = '\t\t'
+                else:
+                        tabs = '\t\t\t'
+                if v=="":
+                        continue
+                print k, tabs, v
+        ix -= 1
