@@ -19,3 +19,4 @@ Functions
 - get point from user input (i.e. address, intersection, etc.) <-- using Google Maps API
 - search for Google Place :white_check_mark:
   - autocomplete :white_check_mark:
+<script src="https://gist.github.com/jtweddle89/8dafaed379fa678e7aa110d87203004a.js"></script>
